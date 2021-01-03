@@ -3,6 +3,9 @@ Python application using PysimpleGUI to provide a simple interface for downloadi
 
 Requirements:
 
-*Python3 
-*CloudScraper
-*PysimpleGUI
+  1.Python3 
+
+  2.CloudScraper
+
+  3.PysimpleGUI
+
