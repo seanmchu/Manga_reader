@@ -97,7 +97,6 @@ def dl(manga_id, lang_code, tld="org"):
 		if chapter_num in requested_chapters and manga["chapter"][chapter_id]["lang_code"] == lang_code:
 			chaps_to_dl.append((str(chapter_num), chapter_id, chapter_group))
 	chaps_to_dl.sort(key = lambda x: float(x[0]))
-
 	# get chapter(s) json
 	print()
 	for chapter_id in chaps_to_dl:
