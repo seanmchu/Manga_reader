@@ -1,10 +1,8 @@
 # Manga reader in Python 3, using pysimplegui as a GUI framework
 # Written by seanmchu on github starting Jan 4 2020
-
+import cloudscraper as cs 
 import PySimpleGUI as sg
-import cloudscraper as cs
 import time, os, sys, re, json, html
-
 #Theme
 sg.SetOptions(background_color='#db37d0',
        text_element_background_color='#db37d0',
@@ -91,6 +89,7 @@ def dl(m_id):
                 chap.append(m_info["chapter"][str(c)]["chapter"])
                 chap_data.append(cinfo)
                 cinfo = {}
+        chap = list(set(chap))
         chap.sort(key = to_float)
         for c in chap:
             if (c == ""):
